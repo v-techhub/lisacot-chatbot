@@ -20,9 +20,9 @@ function speak(text) {
 async function sendMessage() {
   const text = input.value.trim();
   if (!text) {
-    // const audio = new Audio("./windows-98-error.mp3");
-    // audio.play();
-    // alert("Please enter a message");
+    const audio = new Audio("./windows-98-error.mp3");
+    audio.play();
+    alert("Please enter a message");
     return;
   }
   addMessage(text, "user");
